@@ -2,7 +2,7 @@ var canvas = document.getElementById('myCanvas');
 var message = document.getElementById('message');
 var ctx = canvas.getContext('2d');
 
-var interval = getRandomArbitrary(5, 30);
+var interval = getRandomArbitrary(10, 30);
 var randomColor = getRandomColor();
 var score = 0;
 var lives = 3;
@@ -202,7 +202,7 @@ function draw() {
 }
 
 function startGame() {
-	draw();
+	// draw();
 	// requestAnimationFrame(draw);
 	setInterval(draw, interval);
 }
